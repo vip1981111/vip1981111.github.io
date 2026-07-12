@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>كاتب — تم التأكيد</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0F0F17;
+      color: #E0E0E0;
+      font-family: -apple-system, 'SF Pro Arabic', 'Helvetica Neue', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      background: #1A1A2E;
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 20px;
+      padding: 48px 36px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(1, 50, 32, 0.3);
+      border: 2px solid #013220;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 28px;
+    }
+
+    .icon svg {
+      width: 40px;
+      height: 40px;
+      stroke: #4CAF50;
+      stroke-width: 3;
+      fill: none;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #A0A0B0;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #D4AF37, #B8960C);
+      color: #0F0F17;
+      font-size: 17px;
+      font-weight: 700;
+      padding: 14px 40px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .btn:hover { opacity: 0.85; }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #555;
+    }
+
+    .footer a {
+      color: #777;
+      text-decoration: none;
+      margin: 0 8px;
+    }
+
+    .footer a:hover { color: #D4AF37; }
+
+    .sep { color: #444; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="icon">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h1>تم تأكيد بريدك بنجاح!</h1>
+    <p>ارجع إلى تطبيق كاتب وسجّل دخولك بالبريد وكلمة المرور اللي اخترتها.</p>
+    <a class="btn" href="https://apps.apple.com/app/id6763545972">افتح كاتب</a>
+  </div>
+
+  <div class="footer">
+    <a href="privacy-policy.html">سياسة الخصوصية</a>
+    <span class="sep">|</span>
+    <a href="terms-of-service.html">الشروط والأحكام</a>
+  </div>
+
+</body>
+</html>
