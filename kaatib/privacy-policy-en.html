@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Kaatib</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+      background: #0F0F17;
+      color: #E5E5E5;
+      line-height: 1.8;
+      padding: 24px 16px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 {
+      color: #D4AF37;
+      font-size: 28px;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .subtitle {
+      color: #888;
+      text-align: center;
+      margin-bottom: 32px;
+      font-size: 14px;
+    }
+    h2 {
+      color: #D4AF37;
+      font-size: 20px;
+      margin-top: 28px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #013220;
+      padding-bottom: 8px;
+    }
+    p, li {
+      font-size: 15px;
+      margin-bottom: 12px;
+      color: #CCCCCC;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+    a {
+      color: #D4AF37;
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+      text-align: center;
+      color: #888;
+      font-size: 13px;
+    }
+    strong { color: #D4AF37; }
+  </style>
+</head>
+<body>
+  <h1>Privacy Policy</h1>
+  <p class="subtitle">Kaatib App — Your Smart Arabic Writing Assistant</p>
+  <p class="subtitle">Last updated: July 6, 2026</p>
+
+  <h2>1. Introduction</h2>
+  <p>At <strong>MoApps Studio</strong>, we place the utmost importance on your privacy. This policy explains how we collect, use, and protect your information when you use the <strong>Kaatib</strong> app.</p>
+
+  <h2>2. Information We Collect</h2>
+
+  <p><strong>A. Account Information:</strong></p>
+  <ul>
+    <li>Email address (for authentication)</li>
+    <li>Name (optional via Apple Sign-In)</li>
+    <li>Password (encrypted with bcrypt)</li>
+  </ul>
+
+  <p><strong>B. Writing Content:</strong></p>
+  <ul>
+    <li>Texts you write and submit for processing</li>
+    <li><strong>Saved Works:</strong> When you save a work (input text + generated output), it is stored locally and in your cloud account (Supabase) to sync across your devices. You can delete your works at any time from within the app, and they will be removed from our servers according to our retention policy</li>
+  </ul>
+
+  <p><strong>C. Official Letter Data:</strong></p>
+  <ul>
+    <li>Full name, ID number, phone number — stored <strong>locally on your device only</strong> (SharedPreferences) for auto-filling letters, and are not sent to our servers</li>
+    <li>Generated letter content: processed through the AI provider (Anthropic) to produce the text, as described in Section 4 below</li>
+  </ul>
+
+  <p><strong>D. Digital Stamps and Signatures:</strong></p>
+  <ul>
+    <li>Stamp and signature images you create are stored <strong>locally on your device</strong>, with optional syncing via Supabase servers for retrieval on your other devices. Data is transferred over encrypted connections (HTTPS) and stored according to the service provider's encryption standards, and can only be accessed from your account</li>
+  </ul>
+
+  <p><strong>E. Technical Information:</strong></p>
+  <ul>
+    <li>Device type and operating system</li>
+    <li>Language settings</li>
+    <li>Usage logs (to improve the service)</li>
+  </ul>
+
+  <h2>3. How We Use Your Information</h2>
+  <ul>
+    <li>Providing smart writing services</li>
+    <li>Saving your works and syncing them across your devices</li>
+    <li>Improving AI accuracy and quality</li>
+    <li>Communicating with you regarding your account or updates</li>
+    <li>Preventing fraud and ensuring security</li>
+  </ul>
+
+  <h2>4. Artificial Intelligence</h2>
+  <p>Kaatib uses <strong>Claude AI by Anthropic</strong> technology to process texts. When you submit a text:</p>
+  <ul>
+    <li>The text is sent to Anthropic's servers in encrypted form (HTTPS)</li>
+    <li>The text is not used to train AI models</li>
+    <li>The text is deleted from Anthropic's servers after processing</li>
+  </ul>
+
+  <h2>5. Information Sharing</h2>
+  <p>We <strong>do not sell</strong> your personal information. We only share it with:</p>
+  <ul>
+    <li><strong>Supabase:</strong> Account and works storage</li>
+    <li><strong>Anthropic:</strong> AI text processing</li>
+    <li><strong>RevenueCat:</strong> Subscription management</li>
+    <li><strong>Apple/Google:</strong> Payment through app stores</li>
+    <li><strong>Google AdMob:</strong> Advertisements (free version only)</li>
+    <li><strong>TikTok Business:</strong> Ad analytics and marketing campaign measurement</li>
+  </ul>
+
+  <h2>6. Advertisements (Free Version)</h2>
+  <p>The free version uses Google AdMob advertisements. Ads may use the device identifier (IDFA) according to your preferences in iOS settings (App Tracking Transparency). <strong>Kaatib Pro</strong> and <strong>Kaatib Pro Plus</strong> subscribers do not see any advertisements.</p>
+
+  <h2>6.1 TikTok Analytics & Tracking</h2>
+  <p>We use <strong>TikTok Business SDK</strong> for ad analytics and measuring marketing campaign effectiveness:</p>
+  <ul>
+    <li><strong>Purpose:</strong> Measuring app installs from TikTok ads and understanding user engagement</li>
+    <li><strong>Data Collected:</strong> Advertising identifier (IDFA) — only with your consent via ATT, device identifier, app events (install, open)</li>
+    <li><strong>Tracking:</strong> The app requests your permission through Apple's "App Tracking Transparency" prompt</li>
+    <li><strong>Opt-out:</strong> You can decline tracking at any time from iOS settings</li>
+    <li><strong>Domains:</strong> analytics.tiktok.com, business-api.tiktok.com</li>
+    <li><strong>TikTok Policy:</strong> <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">tiktok.com/privacy-policy</a></li>
+  </ul>
+
+  <h2>7. Data Protection</h2>
+  <ul>
+    <li>HTTPS encryption for all communications</li>
+    <li>AES-256 encryption for passwords</li>
+    <li>Code Obfuscation for code protection</li>
+    <li>Row Level Security in the database</li>
+  </ul>
+
+  <h2>8. Your Rights</h2>
+  <p>You have the right to:</p>
+  <ul>
+    <li>Access your personal data</li>
+    <li>Correct or delete your data</li>
+    <li>Export your saved works</li>
+    <li>Delete your account entirely</li>
+    <li>Withdraw consent for data processing</li>
+  </ul>
+  <p>To exercise these rights, contact us at: <a href="mailto:myappdv@gmail.com">myappdv@gmail.com</a></p>
+
+  <h2>9. Children</h2>
+  <p>Kaatib is not intended for children under the age of 13. If we discover that a minor has provided personal information, we will delete it immediately.</p>
+
+  <h2>10. Data Retention</h2>
+  <p>We retain your data as long as your account is active. Upon account deletion, we delete all data within 30 days.</p>
+
+  <h2>11. Changes to This Policy</h2>
+  <p>We may update this policy from time to time. We will notify you of any material changes through the app or by email.</p>
+
+  <h2>12. Contact Us</h2>
+  <p>For any privacy inquiries:</p>
+  <ul>
+    <li>Email: <a href="mailto:myappdv@gmail.com">myappdv@gmail.com</a></li>
+    <li>Website: <a href="https://vip1981111.github.io">vip1981111.github.io</a></li>
+    <li>Developer: Mohammed Abdullah — MoApps Studio</li>
+  </ul>
+
+  <div class="footer">
+    <p>&copy; 2026 MoApps Studio. All rights reserved.</p>
+    <p><a href="terms-of-service-en.html">Terms & Conditions</a></p>
+  </div>
+</body>
+</html>
