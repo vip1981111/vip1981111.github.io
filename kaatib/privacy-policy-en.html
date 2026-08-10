@@ -63,7 +63,7 @@
 <body>
   <h1>Privacy Policy</h1>
   <p class="subtitle">Kaatib App — Your Smart Arabic Writing Assistant</p>
-  <p class="subtitle">Last updated: July 6, 2026</p>
+  <p class="subtitle">Last updated: August 3, 2026</p>
 
   <h2>1. Introduction</h2>
   <p>At <strong>MoApps Studio</strong>, we place the utmost importance on your privacy. This policy explains how we collect, use, and protect your information when you use the <strong>Kaatib</strong> app.</p>
@@ -74,7 +74,7 @@
   <ul>
     <li>Email address (for authentication)</li>
     <li>Name (optional via Apple Sign-In)</li>
-    <li>Password (encrypted with bcrypt)</li>
+    <li>Password (securely processed and stored by Supabase Auth and not visible to the developer)</li>
   </ul>
 
   <p><strong>B. Writing Content:</strong></p>
@@ -85,27 +85,28 @@
 
   <p><strong>C. Official Letter Data:</strong></p>
   <ul>
-    <li>Full name, ID number, phone number — stored <strong>locally on your device only</strong> (SharedPreferences) for auto-filling letters, and are not sent to our servers</li>
-    <li>Generated letter content: processed through the AI provider (Anthropic) to produce the text, as described in Section 4 below</li>
+    <li>Full name, ID number, and phone number are stored locally on your device (SharedPreferences) to auto-fill letters</li>
+    <li>When you choose to generate a letter, the request content and the data needed to produce it are sent to the AI provider (Anthropic) after your explicit consent, as described in Section 4</li>
   </ul>
 
   <p><strong>D. Digital Stamps and Signatures:</strong></p>
   <ul>
-    <li>Stamp and signature images you create are stored <strong>locally on your device</strong>, with optional syncing via Supabase servers for retrieval on your other devices. Data is transferred over encrypted connections (HTTPS) and stored according to the service provider's encryption standards, and can only be accessed from your account</li>
+    <li>Stamp and signature images are stored locally and automatically synced to your Supabase account when you are signed in and online. They are transferred over HTTPS and protected by account-scoped access policies</li>
   </ul>
 
   <p><strong>E. Technical Information:</strong></p>
   <ul>
-    <li>Device type and operating system</li>
-    <li>Language settings</li>
-    <li>Usage logs (to improve the service)</li>
+    <li>Device type, operating system, and language settings</li>
+    <li>Tool usage and rewarded-ad counts to enforce daily limits and prevent abuse</li>
+    <li>Google AdMob may collect IP address (to estimate approximate location), ad interactions, diagnostics, and device or advertising identifiers for advertising, analytics, and fraud prevention</li>
+    <li>RevenueCat collects purchase history and the app account identifier to provide and verify subscriptions</li>
   </ul>
 
   <h2>3. How We Use Your Information</h2>
   <ul>
     <li>Providing smart writing services</li>
     <li>Saving your works and syncing them across your devices</li>
-    <li>Improving AI accuracy and quality</li>
+    <li>Generating requested results and improving service reliability and performance</li>
     <li>Communicating with you regarding your account or updates</li>
     <li>Preventing fraud and ensuring security</li>
   </ul>
@@ -121,32 +122,20 @@
   <h2>5. Information Sharing</h2>
   <p>We <strong>do not sell</strong> your personal information. We only share it with:</p>
   <ul>
-    <li><strong>Supabase:</strong> Account and works storage</li>
+    <li><strong>Supabase:</strong> Authentication and storage of account data, works, stamps, and usage records</li>
     <li><strong>Anthropic:</strong> AI text processing</li>
     <li><strong>RevenueCat:</strong> Subscription management</li>
     <li><strong>Apple/Google:</strong> Payment through app stores</li>
     <li><strong>Google AdMob:</strong> Advertisements (free version only)</li>
-    <li><strong>TikTok Business:</strong> Ad analytics and marketing campaign measurement</li>
   </ul>
 
   <h2>6. Advertisements (Free Version)</h2>
-  <p>The free version uses Google AdMob advertisements. Ads may use the device identifier (IDFA) according to your preferences in iOS settings (App Tracking Transparency). <strong>Kaatib Pro</strong> and <strong>Kaatib Pro Plus</strong> subscribers do not see any advertisements.</p>
-
-  <h2>6.1 TikTok Analytics & Tracking</h2>
-  <p>We use <strong>TikTok Business SDK</strong> for ad analytics and measuring marketing campaign effectiveness:</p>
-  <ul>
-    <li><strong>Purpose:</strong> Measuring app installs from TikTok ads and understanding user engagement</li>
-    <li><strong>Data Collected:</strong> Advertising identifier (IDFA) — only with your consent via ATT, device identifier, app events (install, open)</li>
-    <li><strong>Tracking:</strong> The app requests your permission through Apple's "App Tracking Transparency" prompt</li>
-    <li><strong>Opt-out:</strong> You can decline tracking at any time from iOS settings</li>
-    <li><strong>Domains:</strong> analytics.tiktok.com, business-api.tiktok.com</li>
-    <li><strong>TikTok Policy:</strong> <a href="https://www.tiktok.com/legal/page/global/privacy-policy/en">tiktok.com/privacy-policy</a></li>
-  </ul>
+  <p>The free version uses Google AdMob. Ads may use an advertising identifier according to your device settings and the privacy choices available on the platform. <strong>Kaatib Pro</strong> and <strong>Kaatib Pro Plus</strong> subscribers do not see advertisements.</p>
 
   <h2>7. Data Protection</h2>
   <ul>
     <li>HTTPS encryption for all communications</li>
-    <li>AES-256 encryption for passwords</li>
+    <li>Password and session management through Supabase Auth</li>
     <li>Code Obfuscation for code protection</li>
     <li>Row Level Security in the database</li>
   </ul>
@@ -160,13 +149,13 @@
     <li>Delete your account entirely</li>
     <li>Withdraw consent for data processing</li>
   </ul>
-  <p>To exercise these rights, contact us at: <a href="mailto:myappdv@gmail.com">myappdv@gmail.com</a></p>
+  <p>You can delete your account in the app or follow the <a href="account-deletion-en.html">account and data deletion instructions</a>. For other privacy requests, contact <a href="mailto:myappdv@gmail.com">myappdv@gmail.com</a>.</p>
 
   <h2>9. Children</h2>
   <p>Kaatib is not intended for children under the age of 13. If we discover that a minor has provided personal information, we will delete it immediately.</p>
 
   <h2>10. Data Retention</h2>
-  <p>We retain your data as long as your account is active. Upon account deletion, we delete all data within 30 days.</p>
+  <p>We retain your data while your account is active. After account deletion or approval of a deletion request, account-linked data is deleted within 30 days. Limited transaction records may be retained when required by law or app-store obligations.</p>
 
   <h2>11. Changes to This Policy</h2>
   <p>We may update this policy from time to time. We will notify you of any material changes through the app or by email.</p>
@@ -181,7 +170,7 @@
 
   <div class="footer">
     <p>&copy; 2026 MoApps Studio. All rights reserved.</p>
-    <p><a href="terms-of-service-en.html">Terms & Conditions</a></p>
+    <p><a href="terms-of-service-en.html">Terms &amp; Conditions</a> · <a href="account-deletion-en.html">Delete Account</a> · <a href="privacy-policy.html">العربية</a></p>
   </div>
 </body>
 </html>
